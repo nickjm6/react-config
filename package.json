@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sudo node app.js",
-    "build": "node ./env.js && webpack",
-    "watch": "webpack --watch",
+    "start": "node app.js",
+    "build": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
     "start:dev": "concurrently \"nodemon app.js\" \"npm run watch\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
